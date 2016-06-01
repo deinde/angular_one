@@ -1,10 +1,7 @@
 /* @override 
 
-
-@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather:400,300,700,900|Droid+Sans:400,700");
-
 /* Reset Styles */
-
+@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather:400,300,700,900|Droid+Sans:400,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -152,6 +149,7 @@ a.small {
 
 .search h1 {
   color: #EEE8D5;
+  text-align: center;    
 }
 
 .btn {
@@ -195,6 +193,7 @@ a.small {
 .search input {
   font-family: 'Droid Sans', sans-serif;
   width: 100%;
+  margin-bottom: 13px;    
   padding: 10px 0 10px 15px;
   font-size: 1rem;
   color: #475B62;
@@ -202,6 +201,7 @@ a.small {
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 10px;
   outline: 0;
+    
 }
 
 .search .formgroup input {
@@ -230,12 +230,12 @@ a.small {
 
 .author {
   background: #EEE8D5;
-  width: 50%;
+/*  width: 50%;*/
   min-width: 290px;
   max-width:350px;
   margin: 0 auto;
   margin-bottom: 30px;
-  border-radius: 0 0 20px 20px;
+/*  border-radius: 0 0 20px 20px;*/
   opacity: .95;
   z-index: 10;
 }
@@ -277,10 +277,11 @@ a.small {
   padding-left: 120px !important;
 }
 
-.author:last-child {
-  border-bottom:none;
-}
 
+.author:last-child {
+    border-bottom: none;
+    border-radius: 0px 0px 15px 15px;
+}
 .authorinfo {
   font-size: 1.1em;
   line-height: 160%;
