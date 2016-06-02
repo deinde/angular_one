@@ -9,6 +9,12 @@ authorControllers.controller('ListController', ['$scope', '$http', function($sco
   });
 }]);
 
+authorControllers.controller('DetailsController', ['$scope', '$http','routeParams', function($scope, $http,$routeParams) {
+  $http.get('js/data.json').success(function(data) {
+    $scope.authors = data;
+    $scope.WhichItem = $routeParams.itemId;
+  });
+}]);
 
 
 

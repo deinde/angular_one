@@ -25,12 +25,13 @@
   <ul class="author">
 <!--Data $scope object named 'authors' being added to ng-repeat loop of partial with filters-->
     <li class="author cf" ng-repeat="item in authors | filter:query | orderBy: authorOrder: direction">
+     <a href="#/details/{{authors.indexOf(item)}}">
       <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
       <div class="info">
         <h2>{{item.name | uppercase}}</h2>
         <h3>{{item.reknown}}</h3>
-
       </div>
+      </a>
     </li>
   </ul>
 </section>
