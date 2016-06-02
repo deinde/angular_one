@@ -167,7 +167,7 @@ a.small {
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 4px;
-    background: #C61C6F;
+    background:#023E54;
     color: #FCF4DC;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -185,7 +185,7 @@ a.small {
 }
 
 .btn:hover {
-    background: #09576D;
+   background: #CC232E;
 }
 
 .search label {
@@ -309,12 +309,20 @@ a.small {
   margin-bottom: 0;
 }
 
+/*
 .authorinfo img {
   width: 40%;
   max-width: 130px;
   border-radius: 20px;
 }
-
+*/
+.authorinfo img {
+    width: 40%;
+    max-width: 130px;
+    border-radius: 20px;
+    float: left;
+    margin: 10px 13px 1px 0px;
+}
 .authorinfo .btn {
 
 }
@@ -322,4 +330,9 @@ a.small {
 #logo {
     float: left;
     margin-left:25px;
+}
+@media screen and (max-width:700px){
+    #logo{
+        display:none;
+    }
 }

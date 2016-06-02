@@ -9,16 +9,24 @@ authorControllers.controller('ListController', ['$scope', '$http', function($sco
   });
 }]);
 
-authorControllers.controller('DetailsController', ['$scope', '$http','routeParams', function($scope, $http,$routeParams) {
+authorControllers.controller('DetailsController', ['$scope', '$http','$routeParams', function($scope, $http, $routeParams) {
   $http.get('js/data.json').success(function(data) {
     $scope.authors = data;
-    $scope.WhichItem = $routeParams.itemId;
+    $scope.whichItem = $routeParams.itemId;
+      
+      if ($routeParams.itemId > 0) {
+      $scope.prevItem = Number($routeParams.itemId)-1;
+    } else {
+      $scope.prevItem = $scope.authors.length-1;
+    }
+
+    if ($routeParams.itemId < $scope.authors.length-1) {
+      $scope.nextItem = Number($routeParams.itemId)+1;
+    } else {
+      $scope.nextItem = 0;
+    }
   });
 }]);
-
-
-
-
 
 
 

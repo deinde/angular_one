@@ -8,7 +8,7 @@
     <label class="formgroup">by:
       <select ng-model="authorOrder">
         <option value="name">Name</option>
-        <option value="reknown">Reknown</option>
+        <option value="book">book</option>
       </select>
     </label>
 
@@ -29,7 +29,7 @@
       <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
       <div class="info">
         <h2>{{item.name | uppercase}}</h2>
-        <h3>{{item.reknown}}</h3>
+        <h3>{{item.book}}</h3>
       </div>
       </a>
     </li>
