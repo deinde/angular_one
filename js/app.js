@@ -23,6 +23,7 @@
 var myApp = angular.module('myApp', [
   'ngRoute',
   'authorControllers'
+   
 ]);
 
 myApp.config(['$routeProvider', function($routeProvider) {

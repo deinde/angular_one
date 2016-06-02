@@ -256,6 +256,20 @@ a.small {
   margin: 0;
   padding: 10px 10px 0 10px;
   border-bottom: 1px dotted black;
+  opacity: .9;
+  -webkit-transition: all 0.3s ease-out;  
+  -moz-transition: all 0.3s ease-out;  
+  -o-transition: all 0.3s ease-out;  
+  transition: all 0.3s ease-out;     
+}
+
+.author li:hover {
+  background: #f4f4f4;
+    opacity: 1;
+    -webkit-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    transform:scale(1.2);
 }
 
 .author a {
@@ -263,9 +277,7 @@ a.small {
   text-decoration: none;
 }
 
-.author li:hover {
-  background: #f4f4f4;
-}
+
 
 .author img {
   display: block;
@@ -321,7 +333,7 @@ a.small {
     max-width: 130px;
     border-radius: 20px;
     float: left;
-    margin: 10px 13px 1px 0px;
+    margin: 10px 13px 0px 0px;
 }
 .authorinfo .btn {
 
@@ -335,4 +347,17 @@ a.small {
     #logo{
         display:none;
     }
+}
+
+.author.ng-enter.ng-enter-active,
+.author.ng-leave{
+    opacity:1px;
+    height: 80px;
+    overflow: hidden;
+}
+.author.ng-leave.ng-leave-active,
+.author.ng-enter{
+    opacity:0px;
+    height: 0px;
+    overflow: hidden;
 }

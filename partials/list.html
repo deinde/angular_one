@@ -22,9 +22,9 @@
     </label>
    
   </div>
-  <ul class="author">
+  <ul class="author" ng-show="query">
 <!--Data $scope object named 'authors' being added to ng-repeat loop of partial with filters-->
-    <li class="author cf" ng-repeat="item in authors | filter:query | orderBy: authorOrder: direction">
+    <li ng-animate="'animate'" class="author cf" ng-repeat="item in authors | filter:query | orderBy: authorOrder: direction">
      <a href="#/details/{{authors.indexOf(item)}}">
       <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
       <div class="info">
